@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tx_toplabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Counter : "
+        app:layout_constraintBottom_toBottomOf="@id/tx_counter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tx_counter"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@id/bt_start"
+        app:layout_constraintEnd_toEndOf="@id/tx_toplabel"
+        app:layout_constraintStart_toStartOf="@id/tx_toplabel"
+        app:layout_constraintTop_toTopOf="@id/tx_toplabel"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tx_counter"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@id/tx_counter"
+        app:layout_constraintTop_toTopOf="@id/tx_counter"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <Button
+        android:id="@+id/bt_increase_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Increase Speed"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/bt_decrease_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decrease Speed" />
+
+
+</LinearLayout>
